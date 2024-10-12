@@ -7,6 +7,7 @@
   margin: 0px;
   padding: 0px;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -22,10 +23,11 @@ body {
 }
 
 nav {
-  background-color: black;
   display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  padding: 5px;
   border-bottom: 0.5px solid white;
 }
 
@@ -36,6 +38,8 @@ nav img {
 }
 
 nav a {
+  display: flex;
+  align-items: center;
   color: white;
   text-decoration: none;
   list-style: none;

@@ -4,23 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Calculator</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="calulator.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- NAVBAR -->
     <nav class="navbar">
-      <div>
-        <a href="#"><img src="logo.png" alt="Logo" /> Calci</a>
-      </div>
-      <div>
-        <i class="fa-solid fa-mountain-sun" id="toggleLight"></i>
-      </div>
+      <a href="#"><img src="logo.png" alt="Logo" />Calci</a>
+      <i class="fa-solid fa-mountain-sun" id="toggleLight"></i>
     </nav>
 
     <!-- HEADING -->
@@ -35,13 +25,19 @@
           <div class="block">
             <h1>Display</h1>
             <div class="screen">
-              <input type="text" id="outPutScreen">
+              <input type="text" id="outPutScreen" />
             </div>
           </div>
           <div class="bottom-info">
             <h5>How do calculators work ?</h5>
-            <p>Thus, when you input numbers into a calculator, the integrated circuit converts those numbers to binary strings of 0s and 1s. The integrated circuits then use those strings of 0s and 1s to turn transistors on and off with electricity to perform the desired calculations.</p>
-            <img src="image.webp" alt="image">  
+            <p>
+              Thus, when you input numbers into a calculator, the integrated
+              circuit converts those numbers to binary strings of 0s and 1s. The
+              integrated circuits then use those strings of 0s and 1s to turn
+              transistors on and off with electricity to perform the desired
+              calculations.
+            </p>
+            <img src="image.webp" alt="image" />
           </div>
         </div>
       </section>
@@ -51,32 +47,32 @@
             <h1>Numbers</h1>
             <div class="num-btn">
               <ul class="row-1">
-                <li><button onclick="Clear()">AC</button></li> 
-                <li><button onclick="display('1')">1</button></li> 
-                <li><button onclick="display('4')">4</button></li> 
-                <li><button onclick="display('7')">7</button></li> 
-                <li><button onclick="display('00')">00</button></li> 
+                <li><button onclick="Clear()">AC</button></li>
+                <li><button onclick="display('1')">1</button></li>
+                <li><button onclick="display('4')">4</button></li>
+                <li><button onclick="display('7')">7</button></li>
+                <li><button onclick="display('00')">00</button></li>
               </ul>
               <ul class="row-2">
-                <li><button onclick="del()">C</button></li> 
-                <li><button onclick="display('2')">2</button></li> 
-                <li><button onclick="display('5')">5</button></li> 
-                <li><button onclick="display('8')">8</button></li> 
-                <li><button onclick="display('0')">0</button></li> 
+                <li><button onclick="del()">C</button></li>
+                <li><button onclick="display('2')">2</button></li>
+                <li><button onclick="display('5')">5</button></li>
+                <li><button onclick="display('8')">8</button></li>
+                <li><button onclick="display('0')">0</button></li>
               </ul>
               <ul class="row-3">
-                <li><button onclick="display('%')">%</button></li> 
-                <li><button onclick="display('3')">3</button></li> 
-                <li><button onclick="display('6')">6</button></li> 
-                <li><button onclick="display('9')">9</button></li> 
-                <li><button onclick="display('.')">.</button></li> 
+                <li><button onclick="display('%')">%</button></li>
+                <li><button onclick="display('3')">3</button></li>
+                <li><button onclick="display('6')">6</button></li>
+                <li><button onclick="display('9')">9</button></li>
+                <li><button onclick="display('.')">.</button></li>
               </ul>
               <ul class="row-4">
-                <li><button onclick="display('/')">/</button></li> 
-                <li><button onclick="display('*')">*</button></li> 
-                <li><button onclick="display('-')">-</button></li> 
-                <li><button onclick="display('+')">+</button></li> 
-                <li><button onclick="Calculate()" class="equal">=</button></li> 
+                <li><button onclick="display('/')">/</button></li>
+                <li><button onclick="display('*')">*</button></li>
+                <li><button onclick="display('-')">-</button></li>
+                <li><button onclick="display('+')">+</button></li>
+                <li><button onclick="Calculate()" class="equal">=</button></li>
               </ul>
             </div>
           </div>
@@ -84,11 +80,14 @@
       </section>
     </section>
 
-    <script src="https://kit.fontawesome.com/8a6fea7a51.js" crossorigin="anonymous"></script>
-    <script src="calculator.js"></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      src="https://kit.fontawesome.com/8a6fea7a51.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
   </body>
